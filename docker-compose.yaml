@@ -1,0 +1,11 @@
+version:  '3.8'
+services:
+  raviappfinal:
+    image:  ravicustomer:v1
+    build:  .
+    container_name: ravicc11
+    ports:
+    - "1189:80"
+    restart:  always
+    environment:
+      deploy: "app2"
